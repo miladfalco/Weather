@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fartakstok.weather.SecondActivity"
+    android:background="#090821"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#92c8e6"
+        android:hint="Name"
+        android:layout_marginBottom="@dimen/cardview_default_radius"
+        android:ems="10"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editFamily"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#92c8e6"
+        android:hint="Family"
+        android:layout_marginTop="@dimen/cardview_default_radius"
+        android:layout_below="@+id/editName"
+        android:ems="10"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btnButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFamily"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/cardview_default_radius"
+        android:layout_marginTop="@dimen/cardview_default_radius"
+        android:text="Button"
+        android:background="#910645"
+        android:onClick="onClick"
+        android:paddingTop="@dimen/cardview_default_radius"
+        android:layout_marginVertical="@dimen/cardview_default_radius"
+        android:layout_margin="10dp"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnButton"
+        android:background="#a99b9b"
+        android:layout_marginTop="@dimen/cardview_default_radius"
+        android:paddingBottom="@dimen/cardview_default_radius"
+        android:paddingHorizontal="@dimen/cardview_default_radius"
+        android:text="TextView"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
